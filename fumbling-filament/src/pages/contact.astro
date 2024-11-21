@@ -5,15 +5,43 @@ import Layout from '../layouts/Layout.astro';
 <Layout title="Porfolio principal">
 	<main>
 		<div class="m-2 relative h-screen">
-			<div class="text-justify w-full md:w-max dark:bg-slate-800 bg-slate-100 mx-2 rounded items-center justify-center inset-0">
-				<p>
-					Hola, me llamo Santiago, soy un estudiante de DAM (Desarrollo de Aplicaciones Multiplataformas) y soy Tecnico en redes.<br>
-					Me motiva la creatividad y la resolución de problemas, Mi trabajo combina conocimientos adquiridos con amplias formas de resolución de problemas,<br>
-					para crear proyectos que no solo cumplen con las expectativas, sino que también resuelven varios problemas.<br>
-					Cuando no estoy trabajando, me encontrarás o jugando videojuegos o viajando.<br>
-					Siempre estoy dispuesto a buscar nuevos retos y colaborar con personas para dar vida a proyectos únicos.
-				</p>
-			</div>
+            <div class="bg-gray-100 py-8 px-4 rounded-lg shadow-lg max-w-md mx-auto">
+                <h2 class="text-2xl font-bold text-center text-gray-800 mb-6">Contáctanos</h2>
+                <div class="space-y-4">
+                  <!-- Email -->
+                  <div class="flex items-center space-x-4">
+                    <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12l-4-4-4 4m8 8l-4-4-4 4"></path>
+                    </svg>
+                    <a href="" class="text-gray-800 hover:text-blue-600">santiago.calzada.martin@colegiolitterator.com</a>
+                  </div>
+                  <!-- Teléfono -->
+                  <div class="flex items-center space-x-4">
+                    <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10l2-2m0 0l7-7m5 5l2 2m-7 7l-7 7m7-7l7-7m0 0l2-2"></path>
+                    </svg>
+                    <a href="" class="text-gray-800 hover:text-blue-600">696 934 217</a>
+                  </div>
+                  <!-- Redes sociales -->
+                  <div class="flex justify-center space-x-6">
+                    <a href="https://facebook.com" target="_blank" class="text-gray-600 hover:text-blue-600">
+                      <svg class="w-6 h-6" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M9.197 21V12H6V9h3V7.5a4.5 4.5 0 015-4.5H15v3h-1.5c-1.31 0-1.5.7-1.5 1.5V9h3l-1 3h-2v9H9.197z"></path>
+                      </svg>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" class="text-gray-600 hover:text-blue-600">
+                      <svg class="w-6 h-6" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M8.29 20.251c7.548 0 11.675-6.155 11.675-11.5 0-.175 0-.35-.012-.523A8.29 8.29 0 0022 5.92a8.188 8.188 0 01-2.356.645 4.1 4.1 0 001.804-2.267 8.222 8.222 0 01-2.605.985A4.093 4.093 0 0015.847 4c-2.27 0-4.1 1.82-4.1 4.065 0 .317.036.626.105.922A11.636 11.636 0 013 4.525a4.062 4.062 0 00-.553 2.045c0 1.41.723 2.655 1.826 3.385A4.07 4.07 0 012.8 9.71v.05a4.077 4.077 0 003.292 3.993 4.074 4.074 0 01-1.846.07 4.091 4.091 0 003.822 2.83A8.2 8.2 0 012 18.405 11.616 11.616 0 008.29 20.25z"></path>
+                      </svg>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" class="text-gray-600 hover:text-blue-600">
+                      <svg class="w-6 h-6" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M19 0H5C2.239 0 0 2.239 0 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5V5c0-2.761-2.239-5-5-5zM8 19H5v-9h3v9zM6.5 8.65C5.67 8.65 5 7.98 5 7.15S5.67 5.65 6.5 5.65 8 6.32 8 7.15 7.33 8.65 6.5 8.65zM19 19h-3v-4.25c0-.967-.773-1.75-1.75-1.75s-1.75.783-1.75 1.75V19h-3v-9h3v1.22c.471-.682 1.352-1.22 2.25-1.22 1.623 0 2.75 1.127 2.75 2.75V19z"></path>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
 		</div>
 	</main>
 </Layout>
