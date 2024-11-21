@@ -1,0 +1,42 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Porfolio principal">
+	<script is:inline>
+		// Inicializa el modo según la preferencia guardada en localStorage
+		document.addEventListener('DOMContentLoaded', () => {
+		  const theme = localStorage.getItem('theme');
+		  if (theme === 'dark') {
+			document.documentElement.classList.add('dark');
+		  } else {
+			document.documentElement.classList.remove('dark');
+		  }
+		});
+	  
+		// Cambia el tema y guarda la preferencia
+		function toggleTheme() {
+		  const html = document.documentElement;
+		  if (html.classList.contains('dark')) {
+			html.classList.remove('dark');
+			localStorage.setItem('theme', 'light');
+		  } else {
+			html.classList.add('dark');
+			localStorage.setItem('theme', 'dark');
+		  }
+		}
+	  </script>
+	<main>
+		<div class="m-2 relative h-screen">
+			<div class="text-justify w-full md:w-max dark:bg-slate-800 bg-slate-100 mx-2 rounded items-center justify-center inset-0">
+				<p>
+					Hola, me llamo Santiago, soy un estudiante de DAM (Desarrollo de Aplicaciones Multiplataformas) y soy Tecnico en redes.<br>
+					Me motiva la creatividad y la resolución de problemas, Mi trabajo combina conocimientos adquiridos con amplias formas de resolución de problemas,<br>
+					para crear proyectos que no solo cumplen con las expectativas, sino que también resuelven varios problemas.<br>
+					Cuando no estoy trabajando, me encontrarás o jugando videojuegos o viajando.<br>
+					Siempre estoy dispuesto a buscar nuevos retos y colaborar con personas para dar vida a proyectos únicos.
+				</p>
+			</div>
+		</div>
+	</main>
+</Layout>
