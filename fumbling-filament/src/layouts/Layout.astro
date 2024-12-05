@@ -13,11 +13,13 @@ const { title } = Astro.props;
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./src/scripts/transition.js" defer></script>
     <title>Document</title>
 </head>
 
-<body class="bg-emerald-500 text-slate-900 dark:bg-violet-900 dark:text-slate-100">
-  
-		<slot />
-	</body>
+<body class="bg-[url('./src/pages/img/Hacking-Sound-Effect-.MP3-_MOST-VIEWED-VIDEO_.gif')] bg-cover bg-no-repeat bg-center transform transition-all duration-500 ease-in-out text-slate-900 dark:text-slate-100">
+    <div id="transition-container" class="relative overflow-hidden opacity-0 translate-y-4 transition duration-100 ease-in-out">
+        <slot />
+    </div> 
+</body>
 </html>
