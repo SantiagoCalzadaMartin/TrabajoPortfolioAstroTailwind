@@ -1,4 +1,4 @@
-🚀 Portfolio - Alumno de 2º de DAM
+🚀 Portfolio - Santiago de 2º de DAM
 Este es el proyecto de Portfolio Web Personal de un alumno de 2º de Desarrollo de Aplicaciones Multiplataforma (DAM). Este portfolio tiene como objetivo mostrar los conocimientos adquiridos durante el curso y destacar proyectos y habilidades relevantes.
 
 🌟 Características principales
